@@ -1,0 +1,36 @@
+{
+  "name": "pw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "debug": "playwright test --debug",
+    "error": "playwright test --grep @error",
+    "regression": "playwright test regression",
+    "sanity": "playwright test sanity",
+    "staging": "ENV=staging npx playwright test --debug",
+    "staging_windows": "set ENV=staging && npx playwright test --debug",
+    "record": "playwright codegen https://www.saucedemo.com/v1",
+    "ui": "playwright test --ui",
+    "parallel": "playwright test regression --headed --fully-parallel",
+    "update-snapshots": "playwright test --update-snapshots",
+    "installdotenv": "npm install dotenv",
+    "iphone": "DEVICE='iPhone 12' npx playwright test simulator --headed",
+    "emulator": "playwright test emulator",
+    "simulator": "playwright test simulator --headed",
+    "accessibility": "npm i -D @axe-core/playwright"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.2",
+    "allure-playwright": "^3.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
