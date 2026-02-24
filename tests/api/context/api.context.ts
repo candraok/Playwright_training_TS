@@ -1,6 +1,6 @@
 import { expect, request } from '@playwright/test';
 import { APIRequestContext } from '@playwright/test';
-import { setAuth, auth as globalAuth } from '../../../auth/auth.store';
+import { setAuth, globalAuth } from '../../../auth/auth.store';
 import { MyLoginService } from '../service/dummyjson/login.service';
 import { DummyJsonUrl } from '../../../enum/dummyjson.enum';
 import { variable } from '../../../resources/variables';
